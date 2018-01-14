@@ -1,0 +1,31 @@
+.btn {
+    
+    &:link, 
+    &:visited {
+        border: solid $color-header-orange;
+        padding: 2rem 4rem;
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: center;
+        text-decoration: none;
+        color: $color-header-brown;
+        text-transform: uppercase;
+        -webkit-box-shadow: 5px 5px 0 0 $color-header-orange;
+        box-shadow: 5px 5px 0 0 $color-header-orange;
+        transition: transform .4s ease;
+    }
+
+    &:link::after,
+    &:visited::after {
+        transition: transform .2s ease-in-out;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    &:link:hover::after,
+    &:visited:hover::after {
+        box-shadow: none;
+    }
+}

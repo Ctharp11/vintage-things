@@ -73,6 +73,11 @@ body {
   letter-spacing: 1.4px;
   color: #57140e; }
 
+.header-secondary {
+  font-size: 3rem;
+  letter-spacing: 1.4px;
+  color: #57140e; }
+
 .header__logo--est {
   font-family: 'Ranga', cursive;
   font-size: 2.2rem;
@@ -102,6 +107,53 @@ body {
 .nav__navigation--item-link {
   font-size: 1.8rem; }
 
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.about {
+  padding: 2rem; }
+  .about__img {
+    height: 25rem;
+    margin-top: 6rem;
+    margin-right: 4rem;
+    float: left;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17); }
+  .about__text {
+    text-align: left; }
+  .about__paragraph {
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    line-height: 1.6; }
+  .about__btn {
+    display: inline-block;
+    margin-top: 3rem; }
+
+.btn:link, .btn:visited {
+  border: solid #d05a2a;
+  padding: 2rem 4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  color: #57140e;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 0 0 #d05a2a;
+  box-shadow: 5px 5px 0 0 #d05a2a;
+  transition: transform .4s ease; }
+
+.btn:link::after, .btn:visited::after {
+  transition: transform .2s ease-in-out; }
+
+.btn:hover {
+  transform: translate(3px, 3px); }
+
+.btn:link:hover::after, .btn:visited:hover::after {
+  box-shadow: none; }
+
 .header {
   position: relative;
   top: -2rem;
@@ -123,6 +175,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: #e2e2be;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17); }
     .header__logo--header {
       text-align: center;
@@ -172,3 +225,13 @@ body {
         color: #57140e; }
     .nav__navigation--item-image {
       height: 2rem; }
+
+.section {
+  width: 80%;
+  margin: 10rem auto; }
+  .section__shop {
+    position: relative;
+    height: 60rem; }
+  .section__about {
+    position: relative;
+    height: 40rem; }

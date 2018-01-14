@@ -1,0 +1,17 @@
+.section {
+    width: $site-width;
+    margin: 10rem auto;
+
+    
+    &__shop {
+        position: relative;
+        height: 60rem;
+    }
+
+    &__about {
+        position: relative;
+        height: 40rem;
+    }
+}
+
+    

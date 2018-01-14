@@ -12,6 +12,12 @@ body {
         color: $color-header-brown;
     }
 
+    &-secondary {
+        font-size: 3rem;
+        letter-spacing: 1.4px;
+        color: $color-header-brown;
+    }
+
     &__logo {
         &--est {
             font-family: 'Ranga', cursive;
