@@ -1,0 +1,34 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+}
+
+.header {
+
+    &-primary {
+        
+    }
+
+}
+
+.nav {
+
+    [class^="nav"] {
+        color: $color-header-white-2;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+    }
+        
+    &__logo--text {
+        font-size: 1.2rem;
+    }
+
+    &__navigation--item-link {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+

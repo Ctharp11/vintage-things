@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 50rem;
+
+    &__one {
+        background-color: $color-header-orange;
+        height: 15rem;
+    }
+
+    &__two {
+        background-color: $color-header-white-1;
+        height: 20rem;
+    }
+
+    &__three {
+        background-color: $color-header-orange;
+        height: 15rem;
+    }
+
+    &__logo {
+        position: absolute;
+
+    }
+}

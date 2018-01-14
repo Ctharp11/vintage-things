@@ -1,0 +1,52 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 7rem;
+    
+
+    &__logo {
+        border: 2px solid $color-header-white-2;
+        display: inline-block;
+        padding: 1rem;
+        margin-left: 4rem;
+    }
+
+    &__navigation {
+        margin-right: 4rem;
+        
+
+        &--list {
+            display: flex;
+            height: 5rem;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        &--item {
+            
+            &:not(:last-child) {
+                margin-right: 6rem;
+                border-bottom: solid $color-header-white-2;
+
+                
+            }
+
+            &-link {
+                text-decoration: none;
+                padding: 1rem 1rem 0 1rem;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease;
+
+                &:hover {
+                    background-color: $color-header-white-2;
+                    color: $color-header-text;
+                }
+            }
+
+            &-image {
+                height: 2rem; 
+            }
+        }
+    }
+}
