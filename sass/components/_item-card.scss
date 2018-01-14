@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid $color-grey-light-card;
+    border-radius: .8rem;
+    height: 50rem;
+
+    & > * {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    &__img {
+        padding: 1rem 0;
+        height: 50%;
+    }
+
+    &__line {
+        border: 1px solid $color-grey-light-card;
+    }
+
+    &__details {
+        padding: 1rem 0;
+
+    }
+}

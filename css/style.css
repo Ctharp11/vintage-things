@@ -81,14 +81,12 @@ body {
 .header__logo--est {
   font-family: 'Ranga', cursive;
   font-size: 2.2rem;
-  text-align: center;
   color: #e2e2be;
   letter-spacing: 1.5px;
   font-weight: 700; }
 
 .header__logo--head-sub {
   color: #e2e2be;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.4px;
   font-size: 1.4rem;
@@ -106,6 +104,9 @@ body {
 
 .nav__navigation--item-link {
   font-size: 1.8rem; }
+
+.u-text-align-center {
+  text-align: center; }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
@@ -153,6 +154,32 @@ body {
 
 .btn:link:hover::after, .btn:visited:hover::after {
   box-shadow: none; }
+
+.card {
+  border: 1px solid #dbd9d8;
+  border-radius: .8rem;
+  height: 50rem; }
+  .card > * {
+    width: 90%;
+    margin: 0 auto; }
+  .card__img {
+    padding: 1rem 0;
+    height: 50%; }
+  .card__line {
+    border: 1px solid #dbd9d8; }
+  .card__details {
+    padding: 1rem 0; }
+
+.row {
+  width: 100%;
+  margin: 0 auto; }
+  .row [class^="col-"] {
+    float: left;
+    margin-bottom: 2rem; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
 
 .header {
   position: relative;
@@ -225,6 +252,20 @@ body {
         color: #57140e; }
     .nav__navigation--item-image {
       height: 2rem; }
+  .nav__shopping-card-items {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+    border-radius: 50%;
+    background-color: #c29015;
+    height: 3rem;
+    width: 3rem; }
+    .nav__shopping-card-items-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.4rem; }
 
 .section {
   width: 80%;
