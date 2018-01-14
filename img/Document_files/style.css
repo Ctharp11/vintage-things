@@ -40,10 +40,9 @@ body {
 
 .flag {
   width: 110px;
-  height: 67px;
+  height: 56px;
   padding-top: 15px;
-  position: relative;
-  background-color: #d05a2a; }
+  position: relative; }
 
 .flag:after {
   content: "";
@@ -52,12 +51,12 @@ body {
   bottom: 0;
   width: 0;
   height: 0;
-  border-bottom: 13px solid #e2e2be;
+  border-bottom: 13px solid #eee;
   border-left: 55px solid transparent;
   border-right: 55px solid transparent; }
 
 .circle {
-  width: 45rem;
+  width: 40rem;
   height: 40rem;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -66,29 +65,6 @@ body {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
-
-.header-primary {
-  font-size: 7rem;
-  font-weight: 200;
-  letter-spacing: 1.4px;
-  color: #57140e; }
-
-.header__logo--est {
-  font-family: 'Ranga', cursive;
-  font-size: 2.2rem;
-  text-align: center;
-  color: #e2e2be;
-  letter-spacing: 1.5px;
-  font-weight: 700; }
-
-.header__logo--head-sub {
-  color: #e2e2be;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  font-size: 1.4rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%, 5% 50%);
-  clip-path: polygon(); }
 
 .nav [class^="nav"] {
   color: #e2e2be;
@@ -104,43 +80,25 @@ body {
 
 .header {
   position: relative;
-  top: -2rem;
   margin: 0 auto;
   width: 80%;
-  height: 55rem; }
+  height: 50rem; }
   .header__one {
     background-color: #d05a2a;
-    height: 17rem; }
+    height: 15rem; }
   .header__two {
     background-color: #d9cca2;
-    height: 21rem; }
+    height: 20rem; }
   .header__three {
     background-color: #d05a2a;
-    height: 17rem; }
+    height: 15rem; }
   .header__logo {
     position: absolute;
-    top: 28%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: #e2e2be;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17); }
-    .header__logo--header {
-      text-align: center;
-      margin-top: 6rem;
-      margin-bottom: 1.5rem; }
-    .header__logo--head-sub {
-      position: absolute;
-      background-color: #57140e;
-      padding: 1rem;
-      width: 30rem;
-      left: 50%;
-      transform: translateX(-50%); }
-    .header__logo--est {
-      position: absolute;
-      top: 77%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #d05a2a; }
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
 
 .nav {
   display: flex;

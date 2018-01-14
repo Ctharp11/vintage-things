@@ -1,26 +1,54 @@
 .header {
     position: relative;
+    top: -2rem;
     margin: 0 auto;
     width: 80%;
-    height: 50rem;
+    height: 55rem;
 
     &__one {
         background-color: $color-header-orange;
-        height: 15rem;
+        height: 17rem;
     }
 
     &__two {
         background-color: $color-header-white-1;
-        height: 20rem;
+        height: 21rem;
     }
 
     &__three {
         background-color: $color-header-orange;
-        height: 15rem;
+        height: 17rem;
     }
 
     &__logo {
         position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-header-white-2;
+        box-shadow: 0 1rem 2rem rgba($color-black, .17);
 
+        &--header {
+            text-align: center;
+            margin-top: 6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &--head-sub {
+            position: absolute;
+            background-color: $color-header-brown;
+            padding: 1rem;
+            width: 30rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &--est {
+            position: absolute;
+            top: 77%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color-header-orange;
+        }
     }
 }
