@@ -10,8 +10,20 @@
 
 
     &__img {
-        padding: 1rem 0;
-        height: 50%;
+
+        &--holder {
+            padding: 1rem 0;
+            height: 30rem;
+        }
+
+        &--image {
+            width: 90%;
+        }
+
+        &--image--record {
+            width: 58%;
+        }
+        
     }
 
     &__line {
@@ -20,6 +32,18 @@
 
     &__details {
         padding: 1rem 0;
+
+        &--btn {
+            margin: 2.4rem 0;   
+        }
+
+        &--description {
+            
+            &-price {
+                margin: 1rem 0; 
+                font-weight: 500;
+            }
+        }
 
     }
 }

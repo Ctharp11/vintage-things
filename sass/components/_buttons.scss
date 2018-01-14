@@ -28,4 +28,29 @@
     &:visited:hover::after {
         box-shadow: none;
     }
+
+    &__card {
+
+        &:link,
+        &:visited {
+            border: solid $color-header-orange;
+            padding: .5rem .7rem;
+            font-weight: 700;
+            font-size: 1.4rem;
+            text-align: center;
+            text-decoration: none;
+            color: $color-header-brown;
+            text-transform: uppercase;
+            -webkit-box-shadow: 2px 3px 0 0 $color-header-orange;
+            box-shadow: 2px 3px 0 0 $color-header-orange;
+            transition: transform .4s ease;
+        }
+
+        &:hover {
+            background-color: $color-header-orange;
+            color: white;
+            transform: translate(3px, 3px);
+
+        }
+    }
 }

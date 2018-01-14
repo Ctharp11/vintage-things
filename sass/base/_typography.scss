@@ -57,7 +57,29 @@ body {
     &__navigation--item-link {
         font-size: 1.8rem;
     }
+}
 
+.card {
+
+    &__details {
+
+        &--title {
+            font-size: 1.8rem;
+
+        }
+
+        &--description {
+            
+            &-price {
+                font-size: 1.6rem;
+            }
+
+            &-text {
+                font-size: 1.6rem;
+            }
+        }
+
+    }
 }
 
 
