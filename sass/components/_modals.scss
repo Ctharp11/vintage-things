@@ -1,8 +1,8 @@
 .modal {
 
     height: 90vh;
-    border: solid black;
     position: relative;
+    margin-bottom: 2rem;
 
     &__top--grey {
         background-color: $color-grey-light;
@@ -63,6 +63,18 @@
             top: 22vh;
             left: 20%;
             transform: translateX(-50%);
+
+            &--phone {
+                height: 30vh;
+            }
+
+            &--radio {
+                height: 25vh;
+            }
+
+            &--shoes {
+                height: 30vh;
+            }
         }
 
         &--text {
@@ -139,34 +151,234 @@
     }
 
     &__camera {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__coke-dispenser { 
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__phone {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__radio {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__record-player {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__shoes {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__suitcases {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 
     &__tv {
+        &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
+
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
+        }
+
+        &__line--bottom {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
+        }
 
     }
 }
