@@ -32,9 +32,24 @@
 
     &__details {
         padding: 1rem 0;
+        position: relative;
 
         &--btn {
             margin: 2.4rem 0;   
+        }
+
+        &-img {
+            height:2rem;
+            position: absolute;
+            top: 6rem;
+            right: 2rem;
+            backface-visibility: hidden;
+            transition: transform .1s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.08);
+            }
         }
 
         &--description {

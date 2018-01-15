@@ -199,9 +199,20 @@ body {
   .card__line {
     border: 1px solid #dbd9d8; }
   .card__details {
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    position: relative; }
     .card__details--btn {
       margin: 2.4rem 0; }
+    .card__details-img {
+      height: 2rem;
+      position: absolute;
+      top: 6rem;
+      right: 2rem;
+      backface-visibility: hidden;
+      transition: transform .1s ease; }
+      .card__details-img:hover {
+        cursor: pointer;
+        transform: scale(1.08); }
     .card__details--description-price {
       margin: 1rem 0;
       font-weight: 500; }
