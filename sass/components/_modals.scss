@@ -6,7 +6,7 @@
 
     &__top--grey {
         background-color: $color-grey-light;
-        height: 38vh;
+        height: 56vh;
     }
 
     &__middle--grey {
@@ -16,7 +16,22 @@
 
     &__bottom--grey {
         background-color: $color-grey-light;
-        height: 38vh;
+        height: 20vh; 
+    }
+
+    &__triangle--left {
+        position: absolute;
+        top: 5vh;
+        left: 5rem;
+        opacity: .5;
+
+    }
+
+    &__triangle--right {
+        position: absolute;
+        top: 40vh;
+        right: 5rem;
+        opacity: .5;
     }
 
     &__info {
@@ -36,6 +51,10 @@
             top: 5vh;
             left: 50%;
             transform: translateX(-50%);
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 1.4px;
+            color: $color-header-brown;
         }
 
         &--image {
@@ -46,40 +65,76 @@
             transform: translateX(-50%);
         }
 
-        &--btn {
+        &--text {
             position: absolute;
-            top: 68vh;
-            left: 50%;
-            transform: translateX(-50%);
-            border: solid $color-header-orange;
-            padding: 1rem 2.5rem;
-            font-weight: 700;
+            width: 50%;
+            height: 60vh;
+            top: 22vh;
+            right: 10%;
             font-size: 1.6rem;
-            text-align: center;
-            text-decoration: none;
+            letter-spacing: 1.2px;
+            line-height: 1.6;
             color: $color-header-brown;
-            text-transform: uppercase;
-            -webkit-box-shadow: 5px 5px 0 0 $color-header-orange;
-            box-shadow: 5px 5px 0 0 $color-header-orange;
-            transition: transform .4s ease;
 
-            &:hover {
-                background-color: $color-header-orange;
-                color: white;
+            &-price {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            &-description {
+                margin-bottom: 4rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+
+
+            &-btn {
+                padding: 1rem 2.5rem;
+                font-weight: 700;
+                font-size: 1.6rem;
+                text-align: center;
+                text-decoration: none;
+                color: $color-header-brown;
+                text-transform: uppercase;
+                background-color: white;
+                border-radius: 5rem;
+
+                &:hover {
+                    background-color: $color-header-orange;
+                    color: white;
+                }
             }
         }
+
+        
     }
 
-    
-
     &__bottle-caps {
+
         &__line--top {
+            height: .5rem;
+            width: 100%;
+            background-color: $color-grey-light;
+        }
 
-
+        &__line--middle {
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(218, 12, 12);
         }
 
         &__line--bottom {
-            
+            height: .5rem;
+            width: 100%;
+            background-color: rgb(241, 175, 52);
+        }
+
+        &--left {
+            border-right: 55px solid rgb(241, 175, 52);
+        }
+
+        &--right {
+            border-left: 40px solid rgb(218, 12, 12);
         }
     }
 
