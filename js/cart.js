@@ -47,7 +47,6 @@ $('#add-type-writer').on('click', function () {
 })
 
 
-
 $('#shopping-cart').on('click', function() {
     console.log(shoppingCart);
 })
