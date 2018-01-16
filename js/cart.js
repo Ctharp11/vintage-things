@@ -19,18 +19,34 @@ let shoppingCart;
 //  Firebase .set() method
 $('#add-botCap').on('click', function () {
     const bottleCap = $('#add-botCap').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + bottleCap.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + bottleCap.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + bottleCap.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + bottleCap.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: bottleCap.name,
         image: bottleCap.image,
         price: bottleCap.price,
         description: bottleCap.description
     }
+    console.log(shoppingCart.name);
     database.ref().push(shoppingCart);
 })
 
 $('#add-botCapTwo').on('click', function () {
     const bottleCap2 = $('#add-botCapTwo').data();
-    console.log('asd')
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + bottleCap2.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + bottleCap2.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + bottleCap2.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + bottleCap2.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     console.log(bottleCap2);
     shoppingCart = {
         name: bottleCap2.name,
@@ -43,6 +59,14 @@ $('#add-botCapTwo').on('click', function () {
 
 $('#add-camera').on('click', function () {
     const camera = $('#add-camera').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + camera.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + camera.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + camera.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + camera.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: camera.name,
         image: camera.image,
@@ -54,6 +78,14 @@ $('#add-camera').on('click', function () {
 
 $('#add-cameraTwo').on('click', function () {
     const camera = $('#add-cameraTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + camera.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + camera.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + camera.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + camera.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: camera.name,
         image: camera.image,
@@ -65,6 +97,14 @@ $('#add-cameraTwo').on('click', function () {
 
 $('#add-coke').on('click', function () {
     const coke = $('#add-coke').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + coke.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + coke.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + coke.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + coke.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: coke.name,
         image: coke.image,
@@ -76,6 +116,14 @@ $('#add-coke').on('click', function () {
 
 $('#add-cokeTwo').on('click', function () {
     const coke = $('#add-cokeTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + coke.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + coke.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + coke.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + coke.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: coke.name,
         image: coke.image,
@@ -87,6 +135,14 @@ $('#add-cokeTwo').on('click', function () {
 
 $('#add-phone').on('click', function () {
     const phone = $('#add-phone').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + phone.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + phone.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + phone.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + phone.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: phone.name,
         image: phone.image,
@@ -98,6 +154,14 @@ $('#add-phone').on('click', function () {
 
 $('#add-phoneTwo').on('click', function () {
     const phone = $('#add-phoneTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + phone.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + phone.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + phone.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + phone.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: phone.name,
         image: phone.image,
@@ -109,6 +173,14 @@ $('#add-phoneTwo').on('click', function () {
 
 $('#add-radio').on('click', function () {
     const radio = $('#add-radio').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + radio.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + radio.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + radio.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + radio.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: radio.name,
         image: radio.image,
@@ -120,6 +192,14 @@ $('#add-radio').on('click', function () {
 
 $('#add-radioTwo').on('click', function () {
     const radio = $('#add-radioTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + radio.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + radio.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + radio.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + radio.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: radio.name,
         image: radio.image,
@@ -131,6 +211,14 @@ $('#add-radioTwo').on('click', function () {
 
 $('#add-record').on('click', function () {
     const record = $('#add-record').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + record.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + record.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + record.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + record.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: record.name,
         image: record.image,
@@ -142,6 +230,14 @@ $('#add-record').on('click', function () {
 
 $('#add-recordTwo').on('click', function () {
     const record = $('#add-recordTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + record.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + record.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + record.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + record.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: record.name,
         image: record.image,
@@ -153,6 +249,14 @@ $('#add-recordTwo').on('click', function () {
 
 $('#add-reebok').on('click', function () {
     const reebok = $('#add-reebok').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + reebok.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + reebok.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + reebok.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + reebok.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: reebok.name,
         image: reebok.image,
@@ -164,6 +268,14 @@ $('#add-reebok').on('click', function () {
 
 $('#add-reebokTwo').on('click', function () {
     const reebok = $('#add-reebokTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + reebok.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + reebok.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + reebok.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + reebok.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: reebok.name,
         image: reebok.image,
@@ -175,6 +287,14 @@ $('#add-reebokTwo').on('click', function () {
 
 $('#add-suitcase').on('click', function () {
     const suitcase = $('#add-suitcase').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + suitcase.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + suitcase.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + suitcase.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + suitcase.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: suitcase.name,
         image: suitcase.image,
@@ -186,6 +306,14 @@ $('#add-suitcase').on('click', function () {
 
 $('#add-suitcaseTwo').on('click', function () {
     const suitcase = $('#add-suitcaseTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + suitcase.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + suitcase.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + suitcase.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + suitcase.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: suitcase.name,
         image: suitcase.image,
@@ -197,6 +325,14 @@ $('#add-suitcaseTwo').on('click', function () {
 
 $('#add-type-writer').on('click', function () {
     const typeWriter = $('#add-type-writer').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + typeWriter.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + typeWriter.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + typeWriter.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + typeWriter.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
+    );
     shoppingCart = {
         name: typeWriter.name,
         image: typeWriter.image,
@@ -208,6 +344,14 @@ $('#add-type-writer').on('click', function () {
 
 $('#add-type-writerTwo').on('click', function () {
     const typeWriter = $('#add-type-writerTwo').data();
+    $('#added-to-cart').html(
+        '<div class="modal__add-to-cart--content-added"> Added to Cart! </div>' +
+        '<div class="modal__add-to-cart--content-title">' + typeWriter.name + '</div>' + 
+        '<img class="modal__add-to-cart--content-image" src="' + typeWriter.image + '">' + 
+        '<div class="modal__add-to-cart--content-price">' + typeWriter.price + '</div>' +
+        '<div class="modal__add-to-cart--content-description">' + typeWriter.description + '</div>' +
+        '<div class="modal__add-to-cart--content-btn btn-checkout"><a class="modal__add-to-cart--content-link" href="shopping.html">Check Out Now </a></div>'
+    );
     shoppingCart = {
         name: typeWriter.name,
         image: typeWriter.image,
@@ -221,6 +365,20 @@ $('#add-type-writerTwo').on('click', function () {
 database.ref().on("value", function(snapshot) {
 
     console.log(snapshot.val());
+
+    // Number of items in shopping cart 
+    console.log('Number of entries', snapshot.numChildren());
+    let numbersInCart = snapshot.numChildren();
+    if (snapshot.numChildren() === 0) {
+        console.log("don't show")
+    } else  {
+        console.log('showing');
+        $('.nav__shopping-card-items--hidden').addClass('nav__shopping-card-items--show');
+        $('#items-in-cart').html(numbersInCart);
+    }
+    
+    
+
 
 });
 

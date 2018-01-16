@@ -53,4 +53,26 @@
 
         }
     }
+
+    &-checkout {
+        border: solid $color-header-orange;
+        padding: 1rem 2rem;
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: center;
+        text-decoration: none;
+        width: 20rem;
+        color: $color-header-brown;
+        text-transform: uppercase;
+        -webkit-box-shadow: 5px 5px 0 0 $color-header-orange;
+        box-shadow: 5px 5px 0 0 $color-header-orange;
+        transition: transform .4s ease; 
+
+        &:hover {
+            background-color: $color-header-orange;
+            color: white;
+            transform: translate(3px, 3px);
+        }
+    }
 }
+

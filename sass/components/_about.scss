@@ -1,5 +1,6 @@
 .about {
     padding: 2rem;
+    z-index: 1;
 
 
     &__img {
@@ -9,20 +10,24 @@
         float: left;
         -webkit-box-shadow: 0 1rem 2rem rgba($color-black, .17);
         box-shadow: 0 1rem 2rem rgba($color-black, .17);
+        z-index: 1;
     } 
 
     &__text {
         text-align: left;
+        z-index: 1;
     }
 
     &__paragraph {
         font-size: 1.6rem;
         letter-spacing: 1.2px;
         line-height: 1.6;
+        z-index: 1;
     }
 
     &__btn {
         display: inline-block;
         margin-top: 3rem;
+        z-index: -1;
     } 
 }

@@ -30,7 +30,7 @@
                     <li class="nav__navigation--item"><a class="nav__navigation--item-link" id="shopping-cart" href="shopping.html"><img class="nav__navigation--item-image" src="img/shopping-cart.svg"></a></li>
                 </ul>
             </div>
-           <div class="nav__shopping-card-items"> <span class="nav__shopping-card-items-text">2</span></div>
+           <div class="nav__shopping-card-items nav__shopping-card-items--hidden"> <span class="nav__shopping-card-items-text" id="items-in-cart"></span></div>
         </nav>
         
         <div class="header__one">
@@ -538,8 +538,10 @@
             </div>
 
             <div class="modal__add-to-cart" id="modal__added-to-cart">
-                <a href="#shop"><img src="img/times-circle.svg" alt="close" class="modal__add-to-cart--close"></a>
-                Added to Cart!
+                <div class="modal__add-to-cart--content">
+                    <a href="#shop"><img src="img/times-circle.svg" alt="close" class="modal__add-to-cart--content-close"></a>
+                    <div id="added-to-cart"></div>
+                </div>
             </div>
 
         </section>
