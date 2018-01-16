@@ -1,6 +1,14 @@
 .shopping__items {
     padding: 1rem;
 
+    &--total {
+        position: relative;
+        top: 1rem; 
+        left: 72rem;
+        font-size: 1.8rem;
+        color: $color-header-brown;
+    }
+
     &--content {
         height: 15rem;
         color: $color-header-brown;

@@ -812,6 +812,12 @@ body {
 
 .shopping__items {
   padding: 1rem; }
+  .shopping__items--total {
+    position: relative;
+    top: 1rem;
+    left: 72rem;
+    font-size: 1.8rem;
+    color: #57140e; }
   .shopping__items--content {
     height: 15rem;
     color: #57140e;

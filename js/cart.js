@@ -359,18 +359,25 @@ $('#add-type-writerTwo').on('click', function () {
     database.ref().push(shoppingCart);
 })
 
+let totalPrice = 0;
+
+
 // Using .on("value", function(snapshot)) syntax will retrieve the data
 database.ref().on("value", function(snapshot) {
 
     snapshot.forEach(function(childSnapshot) {
         var childKey = childSnapshot.key;
         var childData = childSnapshot.val();
-        // console.log('childKey', childKey);
-        // console.log('childData', childData);
         var name = childData.name;
         var price = childData.price;
         var description = childData.description;
         var image = childData.image;
+
+        
+        var priceSub$ = price.substr(1);
+        let priceParse = parseFloat(priceSub$);
+        totalPrice += priceParse;
+        $('.shopping__items--total').html('<h3> Total Price: $' + totalPrice + '</h3>');
 
         $('#shopping__items').append(
             '<div class="shopping__items--content">' +
@@ -378,11 +385,12 @@ database.ref().on("value", function(snapshot) {
                 '<div class="shopping__items--content-name">' + name +'</div>' + 
                 '<div class="shopping__items--content-description">' + description + '</div>' +
                 '<div class="shopping__items--content-price"> Price: ' + price + '</div>' +
-                '<div class="shopping__items--content-remove" id="remove-item" data-value="' + childKey + '"> Remove </div>' +
+                '<div class="shopping__items--content-remove" id="remove-item" data-value="' + childKey + '" data-number="0 +1"> Remove </div>' +
             '</div>'
             );
 
-        $('#remove-item').on('click', function() {
+        $('.shopping__items--content-remove').on('click', function() {
+            console.log('clicked');
             let removeVal = $('#remove-item').data();
             console.log('removeVal', removeVal.value);
             console.log('childKey', childKey);
