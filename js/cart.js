@@ -33,7 +33,6 @@ $('#add-botCap').on('click', function () {
         price: bottleCap.price,
         description: bottleCap.description
     }
-    console.log(shoppingCart.name);
     database.ref().push(shoppingCart);
 })
 
@@ -47,7 +46,6 @@ $('#add-botCapTwo').on('click', function () {
         '<div class="modal__add-to-cart--content-description">' + bottleCap2.description + '</div>' +
         '<div class="modal__add-to-cart--content-btn btn-checkout"> <a class="modal__add-to-cart--content-link" href="shopping.html"> Check Out Now </a> </div>'
     );
-    console.log(bottleCap2);
     shoppingCart = {
         name: bottleCap2.name,
         image: bottleCap2.image,
@@ -364,33 +362,42 @@ $('#add-type-writerTwo').on('click', function () {
 // Using .on("value", function(snapshot)) syntax will retrieve the data
 database.ref().on("value", function(snapshot) {
 
-    console.log(snapshot.val());
+    snapshot.forEach(function(childSnapshot) {
+        var childKey = childSnapshot.key;
+        var childData = childSnapshot.val();
+        // console.log('childKey', childKey);
+        // console.log('childData', childData);
+        var name = childData.name;
+        var price = childData.price;
+        var description = childData.description;
+        var image = childData.image;
+
+        $('#shopping__items').append(
+            '<div class="shopping__items--content">' +
+                '<img class="shopping__items--content-image" src="' + image + '">' +
+                '<div class="shopping__items--content-name">' + name +'</div>' + 
+                '<div class="shopping__items--content-description">' + description + '</div>' +
+                '<div class="shopping__items--content-price"> Price: ' + price + '</div>' +
+                '<div class="shopping__items--content-remove" id="remove-item" data-value="' + childKey + '"> Remove </div>' +
+            '</div>'
+            );
+
+        $('#remove-item').on('click', function() {
+            let removeVal = $('#remove-item').data();
+            console.log('removeVal', removeVal.value);
+            console.log('childKey', childKey);
+            let child = database.ref().child(childKey);
+                database.ref().child(removeVal.value).remove();
+                location.reload();
+        })
+    });
 
     // Number of items in shopping cart 
-    console.log('Number of entries', snapshot.numChildren());
-    let numbersInCart = snapshot.numChildren();
+    let numbersInCart = snapshot.numChildren(); 
     if (snapshot.numChildren() === 0) {
-        console.log("don't show")
+        return
     } else  {
-        console.log('showing');
         $('.nav__shopping-card-items--hidden').addClass('nav__shopping-card-items--show');
         $('#items-in-cart').html(numbersInCart);
     }
-    
-    
-
-
 });
-
-
-$('#shopping-cart').on('click', function() {
-    console.log(shoppingCart);
-})
-
-$(document).ready(function() {
-    const addedModal = $('#modal__added-to-cart');
-    console.log(addedModal);
-    // if () {
-
-    // }
-})
