@@ -585,12 +585,11 @@ body {
 
 .shopping__header {
   position: relative;
-  top: -2rem;
   margin: 0 auto;
   width: 80%; }
   .shopping__header--one {
     background-color: #d05a2a;
-    height: 8rem; }
+    height: 10rem; }
   .shopping__header--two {
     background-color: #d9cca2;
     height: 8rem; }
@@ -600,7 +599,7 @@ body {
 
 .shopping__title {
   position: absolute;
-  top: 27%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4rem;

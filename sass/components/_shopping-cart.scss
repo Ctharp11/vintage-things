@@ -3,13 +3,12 @@
     &__header {
 
         position: relative;
-        top: -2rem;
         margin: 0 auto;
         width: $site-width;
 
         &--one {
             background-color: $color-header-orange;
-            height: 8rem;
+            height: 10rem;
         }
 
         &--two {
@@ -25,7 +24,7 @@
    
     &__title {
          position: absolute;
-        top: 27%;
+        top: 30%;
         left: 50%;
         transform: translateX(-50%);
         font-size: 4rem;
