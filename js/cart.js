@@ -385,18 +385,19 @@ database.ref().on("value", function(snapshot) {
                 '<div class="shopping__items--content-name">' + name +'</div>' + 
                 '<div class="shopping__items--content-description">' + description + '</div>' +
                 '<div class="shopping__items--content-price"> Price: ' + price + '</div>' +
-                '<div class="shopping__items--content-remove" id="remove-item" data-value="' + childKey + '" data-number="0 +1"> Remove </div>' +
+                '<div class="shopping__items--content-remove" id="' + childKey + '"> Remove </div>' +
             '</div>'
             );
-
         $('.shopping__items--content-remove').on('click', function() {
-            console.log('clicked');
-            let removeVal = $('#remove-item').data();
-            console.log('removeVal', removeVal.value);
-            console.log('childKey', childKey);
-            let child = database.ref().child(childKey);
-                database.ref().child(removeVal.value).remove();
-                location.reload();
+
+            // database.ref(childKey).removeValue();
+            // let removeVal = $('#remove-item').data();
+            // console.log('removeVal', removeVal.value);
+            // console.log('childKey', childKey);
+            // console.log(database.ref().child(childKey))
+            // let child = database.ref().child(childKey);
+            // database.ref(childKey).remove();
+            // location.reload();
         })
     });
 

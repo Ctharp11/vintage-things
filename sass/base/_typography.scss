@@ -10,12 +10,18 @@ body {
         font-weight: 200;
         letter-spacing: 1.4px;
         color: $color-header-brown;
+        @media all and (max-width:600px) {
+            font-size: 12vw;
+         }
     }
 
     &-secondary {
         font-size: 3rem;
         letter-spacing: 1.4px;
         color: $color-header-brown;
+        @media all and (max-width:600px) {
+            font-size: 3vw;
+         }
     }
 
     &__logo {
@@ -25,6 +31,12 @@ body {
             color: $color-header-white-2;
             letter-spacing: 1.5px;
             font-weight: 700;
+            @media all and (max-width:600px) {
+                font-size: 4vw;
+             }
+             @media all and (max-width:400px) {
+                font-size: 3vw;
+             }
         }
 
         &--head-sub {
@@ -34,6 +46,9 @@ body {
             font-size: 1.4rem;
             -webkit-clip-path: polygon(0% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%, 5% 50%);
             clip-path: polygon();
+            @media all and (max-width:600px) {
+                font-size: 2vw;
+             }
         }
     }
 
@@ -48,14 +63,28 @@ body {
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 1.2px;
+
+        @media all and (max-width:700px) {
+            font-weight: 400;
+            letter-spacing: 0;
+        }
     }
         
     &__logo--text {
         font-size: 1.2rem;
+        @media all and (max-width:400px) {
+            font-size: 1rem;
+        }
     }
 
     &__navigation--item-link {
         font-size: 1.8rem;
+        @media all and (max-width:700px) {
+            font-size: 1.4rem;
+        }
+        @media all and (max-width:400px) {
+            font-size: 1.2rem;
+        }
     }
 }
 

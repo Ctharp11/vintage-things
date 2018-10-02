@@ -1,8 +1,8 @@
 .header {
     position: relative;
-    top: -2rem;
+    top: -5rem;
     margin: 0 auto;
-    width: $site-width;
+    width: 100%;
     height: 55rem;
 
     &__one {
@@ -42,6 +42,9 @@
             width: 30rem;
             left: 50%;
             transform: translateX(-50%);
+            @media all and (max-width:600px) {
+                width: 70%;
+             }
         }
 
         &--est {
@@ -50,6 +53,9 @@
             left: 50%;
             transform: translateX(-50%);
             background-color: $color-header-orange;
+            @media all and (max-width:500px) {
+                top: 70%;
+             }
         }
     }
 }
