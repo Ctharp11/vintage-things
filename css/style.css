@@ -936,7 +936,7 @@ body {
   .nav__shopping-card-items {
     position: absolute;
     top: 2.5rem;
-    right: 3rem;
+    right: 2rem;
     border-radius: 50%;
     background-color: #c29015;
     height: 3rem;
@@ -959,9 +959,12 @@ body {
     top: 1rem;
     left: 72rem;
     font-size: 1.8rem;
-    color: #57140e; }
+    color: #57140e;
+    display: inline-block; }
+    @media all and (max-width: 960px) {
+      .shopping__items--total {
+        left: 0; } }
   .shopping__items--content {
-    height: 15rem;
     color: #57140e;
     margin-bottom: 4rem;
     padding: 1rem; }
@@ -970,13 +973,28 @@ body {
       top: -7rem;
       left: 14rem;
       font-size: 1.8rem;
-      color: #57140e; }
+      color: #57140e;
+      display: inline-block; }
+      @media all and (max-width: 960px) {
+        .shopping__items--content-name {
+          left: 2rem; } }
+      @media all and (max-width: 400px) {
+        .shopping__items--content-name {
+          top: -5rem; } }
     .shopping__items--content-price {
       position: relative;
       top: -12rem;
       left: 71rem;
       font-size: 1.6rem;
-      color: #57140e; }
+      color: #57140e;
+      display: inline-block; }
+      @media all and (max-width: 960px) {
+        .shopping__items--content-price {
+          top: -9rem;
+          left: 12rem; } }
+      @media all and (max-width: 400px) {
+        .shopping__items--content-price {
+          top: -12rem; } }
     .shopping__items--content-description {
       position: relative;
       top: -6rem;
@@ -984,6 +1002,12 @@ body {
       font-size: 1.4rem;
       width: 45rem;
       color: #57140e; }
+      @media all and (max-width: 960px) {
+        .shopping__items--content-description {
+          top: 1rem;
+          left: 0;
+          width: 100%;
+          margin-top: 2rem; } }
     .shopping__items--content-image {
       position: relative;
       top: 1rem;
@@ -992,11 +1016,13 @@ body {
       height: 10rem; }
     .shopping__items--content-remove {
       position: relative;
-      top: -11rem;
-      left: 71rem;
+      top: -10rem;
+      left: 61rem;
       font-size: 1.6rem;
       color: #57140e;
-      text-decoration: underline; }
+      text-decoration: underline;
+      display: inline-block;
+      display: none; }
       .shopping__items--content-remove:hover {
         cursor: pointer; }
 

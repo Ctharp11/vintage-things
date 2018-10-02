@@ -7,13 +7,22 @@
         left: 72rem;
         font-size: 1.8rem;
         color: $color-header-brown;
+        display: inline-block;
+
+        @media all and (max-width:960px) {
+            left: 0;
+        }
     }
 
     &--content {
-        height: 15rem;
+        // height: 15rem;
         color: $color-header-brown;
         margin-bottom: 4rem;
         padding: 1rem;
+
+        @media all and (max-width:960px) {
+            // height: 16rem;
+        }
 
         &-name {
             position: relative; 
@@ -21,6 +30,15 @@
             left: 14rem;
             font-size: 1.8rem;
             color: $color-header-brown;
+            display: inline-block;
+
+            @media all and (max-width:960px) {
+                left: 2rem;
+            }
+
+            @media all and (max-width:400px) {
+                top: -5rem;
+            }
 
         }
 
@@ -30,6 +48,17 @@
             left: 71rem;
             font-size: 1.6rem;
             color: $color-header-brown;
+            display: inline-block;
+
+            @media all and (max-width:960px) {
+                top: -9rem;
+                left: 12rem;
+            }
+
+            @media all and (max-width:400px) {
+                // left: 12rem;
+                top: -12rem;
+            }
         }
 
         &-description {
@@ -39,6 +68,14 @@
             font-size: 1.4rem;
             width: 45rem;
             color: $color-header-brown;
+            // display: inline-block;
+
+            @media all and (max-width:960px) {
+                top:1rem;
+                left: 0;
+                width: 100%;
+                margin-top: 2rem;
+            }
 
         }
 
@@ -52,11 +89,13 @@
 
         &-remove {
             position: relative; 
-            top: -11rem; 
-            left: 71rem;
+            top: -10rem; 
+            left: 61rem;
             font-size: 1.6rem;
             color: $color-header-brown;
             text-decoration: underline;
+            display: inline-block;
+            display: none;
 
             &:hover {
                 cursor: pointer;
