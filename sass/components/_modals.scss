@@ -24,14 +24,14 @@
     &__triangle--left {
         position: absolute;
         top: 5vh;
-        left: 5rem; 
+        left: 2rem; 
         opacity: .5;
 
     }
 
     &__triangle--right {
         position: absolute;
-        top: 40vh;
+        top: 76vh;
         right: 5rem;
         opacity: .5;
     }
@@ -57,6 +57,9 @@
             font-weight: 300;
             letter-spacing: 1.4px;
             color: $color-header-brown;
+            @media all and (max-width:700px) {
+                font-size: 1.8rem;
+            }
         }
 
         &--image {
@@ -68,14 +71,28 @@
 
             &--phone {
                 height: 30vh;
+                @media all and (max-width:700px) {
+                    height: 5rem;
+                }
             }
 
             &--radio {
                 height: 25vh;
+                @media all and (max-width:700px) {
+                    // height: 5rem;
+                    width:8rem;
+                }
             }
 
             &--shoes {
                 height: 30vh;
+                @media all and (max-width:700px) {
+                    height: 5rem;
+                }
+            }
+
+            @media all and (max-width:700px) {
+                height: 7rem;
             }
         }
 
@@ -89,6 +106,11 @@
             letter-spacing: 1.2px;
             line-height: 1.6;
             color: $color-header-brown;
+            @media all and (max-width:700px) {
+                letter-spacing: 0;
+                line-height: 1;
+                font-size: 1.2rem;
+            }
 
             &-price {
                 font-size: 2.5rem;
@@ -112,6 +134,12 @@
                 text-transform: uppercase;
                 background-color: white; 
                 border-radius: 5rem;
+                font-size: 1.6rem;
+                
+                @media all and (max-width:700px) {
+                    font-size: 1rem;
+                    padding: 1rem ;
+                }
 
                 &:hover {
                     background-color: $color-header-orange;

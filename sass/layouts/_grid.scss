@@ -8,10 +8,27 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            @media all and (max-width: 1060px) {
+                margin-right: 0;
+            }
         }
     }
 
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+        @media all and (max-width: 1060px) {
+            width: 50%;
+        }
+
+        @media all and (max-width: 730px) {
+            width: 85%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media all and (max-width: 600px) {
+            width: 100%;
+        }
     }
 }

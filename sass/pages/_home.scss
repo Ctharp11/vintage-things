@@ -1,17 +1,23 @@
 .section {
     width: $site-width;
-    margin: 10rem auto;
+    margin: 5rem auto;
+    display: block;
 
+    @media all and (max-width: 700px) {
+        width: 95%;
+    }
     
     &__shop {
-        position: relative;
-        height: 160rem; 
+        // position: relative;
+        // height: 160rem; 
+        // margin-bottom: 4rem;
+        // height:100%;
     }
 
     &__about {
-        position: relative;
-        height: 40rem;
-        z-index: 1;
+        // position: relative;
+        // height: 40rem;
+        // z-index: 1;
     }
 }
 

@@ -21,7 +21,7 @@
     }
 
     &:hover {
-        transform: translate(3px, 3px);
+        transform: translateY(-3px);
     }
 
     &:link:hover::after,
@@ -71,7 +71,7 @@
         &:hover {
             background-color: $color-header-orange;
             color: white;
-            transform: translate(3px, 3px);
+            transform: translateY(3px, -3px);
         }
     }
 }
