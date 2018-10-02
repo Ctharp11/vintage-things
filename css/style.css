@@ -788,6 +788,9 @@ body {
   font-size: 4rem;
   color: #57140e;
   font-weight: 500; }
+  @media all and (max-width: 700px) {
+    .shopping__title {
+      font-size: 2rem; } }
 
 .shopping__items {
   width: 100%;

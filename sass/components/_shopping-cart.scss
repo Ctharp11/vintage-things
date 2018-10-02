@@ -30,6 +30,10 @@
         font-size: 4rem;
         color: $color-header-brown;
         font-weight: 500;
+
+        @media all and (max-width: 700px) {
+            font-size: 2rem;
+        }
     }
 
     &__items {
